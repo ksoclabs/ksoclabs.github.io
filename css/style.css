@@ -73,6 +73,7 @@ header a:hover{
 #showcase h1{
 	font-size: 45px;
 	font-weight: normal;
+
 }
 
 #showcase p{
@@ -94,11 +95,15 @@ header a:hover{
 #showcase .description{
 	width: 50%;
 	float: left;
+	z-index: 2;
+	position: relative;
 }
 
 #showcase .box{
 	width: 50%;
 	float: left;
+	z-index: 1;
+	position: relative;
 }
 
 #showcase .box img {
@@ -140,8 +145,5 @@ footer a:hover{
 	font-size: 15px;
 	padding: 6px 15px;
 	text-decoration: none;
-}
-.button:hover {
-	background-color: #eb675e;
 }
 
