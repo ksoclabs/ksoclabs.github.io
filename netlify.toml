@@ -1,7 +1,7 @@
 [[headers]]
   for = "/*"
   [headers.values]
-    Content-Security-Policy = "default-src 'none';  font-src data: 'self' fonts.gstatic.com; style-src 'self' fonts.googleapis.com 'unsafe-inline'; img-src 'self'"
+    Content-Security-Policy = "default-src 'none'; font-src data: 'self' fonts.gstatic.com; style-src 'self' fonts.googleapis.com; img-src 'self'; frame-src docs.googe.com;"
     Expect-CT = "enforce, max-age=30"
     Referrer-Policy = "no-referrer"
     Feature-Policy = "autoplay 'none'; camera 'none'; encrypted-media 'none'; fullscreen 'none'; geolocation 'none'; microphone 'none'; midi 'none'; payment 'none'; vr 'none';"
