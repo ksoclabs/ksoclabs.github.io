@@ -1,7 +1,7 @@
 [[headers]]
   for = "/form.html"
   [headers.values]
-    Content-Security-Policy = "default-src 'none'; style-src 'self'; img-src 'self'; frame-src 'https://docs.google.com/'"
+    Content-Security-Policy = "default-src 'none'; style-src 'self'; img-src 'self, https://fonts.googleapis.com/css?family=Roboto+Mono'; frame-src 'https://docs.google.com/'"
     Expect-CT = "enforce, max-age=30"
     Referrer-Policy = "no-referrer"
     Feature-Policy = "autoplay 'none'; camera 'none'; encrypted-media 'none'; fullscreen 'none'; geolocation 'none'; microphone 'none'; midi 'none'; payment 'none'; vr 'none';"
@@ -14,7 +14,7 @@
     Server = "Secret"
   for = "/*"
   [headers.values]
-    Content-Security-Policy = "default-src 'none'; style-src 'self'; img-src 'self'"
+    Content-Security-Policy = "default-src 'none'; style-src 'self, https://fonts.googleapis.com/css?family=Roboto+Mono'; img-src 'self'"
     Expect-CT = "enforce, max-age=30"
     Referrer-Policy = "no-referrer"
     Feature-Policy = "autoplay 'none'; camera 'none'; encrypted-media 'none'; fullscreen 'none'; geolocation 'none'; microphone 'none'; midi 'none'; payment 'none'; vr 'none';"
