@@ -1,8 +1,8 @@
 [[headers]]
   for = "/*"
   [headers.values]
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
     Content-Security-Policy = "default-src 'none'; font-src data: 'self' fonts.gstatic.com; style-src 'self' fonts.googleapis.com; img-src data: 'self'; frame-src https://docs.google.com/;"
-    Expect-CT = "enforce, max-age=30"
     Referrer-Policy = "no-referrer"
     Feature-Policy = "autoplay 'none'; camera 'none'; encrypted-media 'none'; fullscreen 'none'; geolocation 'none'; microphone 'none'; midi 'none'; payment 'none'; vr 'none';"
     X-DNS-Prefetch-Control = "off"
@@ -12,3 +12,4 @@
     X-Download-Options = "noopen"
     X-Content-Type-Options = "nosniff"
     Server = "Secret"
+    Expect-CT = "enforce, max-age=30"
